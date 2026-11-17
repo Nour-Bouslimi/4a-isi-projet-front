@@ -1,5 +1,11 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Le front Pol-eat-heck est chargé.");
+    console.log("La page d'accueil est chargée.");
+});
+
+document.addEventListener("componentsLoaded", () => {
+    console.log(
+        "Le header et le footer partagés sont chargés."
+    );
 });

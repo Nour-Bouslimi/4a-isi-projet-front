@@ -1,0 +1,66 @@
+<header id="main-header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Navigation principale">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#" data-route="home">
+                Pol-eat-heck
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation"
+                aria-controls="main-navigation" aria-expanded="false" aria-label="Afficher ou masquer la navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="main-navigation" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-route="home">
+                            Accueil
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-route="products">
+                            Produits
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-route="menus">
+                            Menus
+                        </a>
+                    </li>
+
+                    <li class="nav-item" data-visible-for="authenticated" hidden>
+                        <a class="nav-link" href="#" data-route="orders">
+                            Mes commandes
+                        </a>
+                    </li>
+
+                    <li class="nav-item" data-visible-for="authenticated" hidden>
+                        <a class="nav-link" href="#" data-route="account">
+                            Mon compte
+                        </a>
+                    </li>
+
+                    <li class="nav-item" data-visible-for="admin" hidden>
+                        <a class="nav-link" href="#" data-route="admin">
+                            Administration
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-lg-2" data-visible-for="guest">
+                        <a class="btn btn-outline-light mt-2 mt-lg-0" href="#" data-route="login">
+                            Connexion
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-lg-2" data-visible-for="authenticated" hidden>
+                        <button id="logout-button" type="button" class="btn btn-outline-light mt-2 mt-lg-0">
+                            Déconnexion
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
